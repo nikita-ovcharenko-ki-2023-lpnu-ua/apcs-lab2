@@ -1,0 +1,27 @@
+# Generated manufacturing files, reports and images (rebuilt by /fab)
+output/
+
+# KiCad local state, backups and caches
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.lck
+\#auto_saved_files#
+_autosave-*
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+
+# Editors and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
