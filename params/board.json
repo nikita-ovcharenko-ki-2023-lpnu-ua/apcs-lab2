@@ -1,0 +1,335 @@
+{
+  "full_name": "Овчаренко Нікіта Андрійович",
+  "hash": "uuid5(NAMESPACE_DNS, full_name)",
+  "guid": "24f9653f-a875-5d8f-9242-e476d2f1079a",
+  "components": [
+    {
+      "ref": "U1",
+      "group": "24f9653f",
+      "size_mm": 8,
+      "pins": [
+        {
+          "number": 1,
+          "symbol": "2"
+        },
+        {
+          "number": 2,
+          "symbol": "4"
+        },
+        {
+          "number": 3,
+          "symbol": "f"
+        },
+        {
+          "number": 4,
+          "symbol": "9"
+        },
+        {
+          "number": 5,
+          "symbol": "6"
+        },
+        {
+          "number": 6,
+          "symbol": "5"
+        },
+        {
+          "number": 7,
+          "symbol": "3"
+        },
+        {
+          "number": 8,
+          "symbol": "f"
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "group": "a875",
+      "size_mm": 4,
+      "pins": [
+        {
+          "number": 1,
+          "symbol": "a"
+        },
+        {
+          "number": 2,
+          "symbol": "8"
+        },
+        {
+          "number": 3,
+          "symbol": "7"
+        },
+        {
+          "number": 4,
+          "symbol": "5"
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "group": "5d8f",
+      "size_mm": 4,
+      "pins": [
+        {
+          "number": 1,
+          "symbol": "5"
+        },
+        {
+          "number": 2,
+          "symbol": "d"
+        },
+        {
+          "number": 3,
+          "symbol": "8"
+        },
+        {
+          "number": 4,
+          "symbol": "f"
+        }
+      ]
+    },
+    {
+      "ref": "U4",
+      "group": "9242",
+      "size_mm": 4,
+      "pins": [
+        {
+          "number": 1,
+          "symbol": "9"
+        },
+        {
+          "number": 2,
+          "symbol": "2"
+        },
+        {
+          "number": 3,
+          "symbol": "4"
+        },
+        {
+          "number": 4,
+          "symbol": "2"
+        }
+      ]
+    },
+    {
+      "ref": "U5",
+      "group": "e476d2f1079a",
+      "size_mm": 12,
+      "pins": [
+        {
+          "number": 1,
+          "symbol": "e"
+        },
+        {
+          "number": 2,
+          "symbol": "4"
+        },
+        {
+          "number": 3,
+          "symbol": "7"
+        },
+        {
+          "number": 4,
+          "symbol": "6"
+        },
+        {
+          "number": 5,
+          "symbol": "d"
+        },
+        {
+          "number": 6,
+          "symbol": "2"
+        },
+        {
+          "number": 7,
+          "symbol": "f"
+        },
+        {
+          "number": 8,
+          "symbol": "1"
+        },
+        {
+          "number": 9,
+          "symbol": "0"
+        },
+        {
+          "number": 10,
+          "symbol": "7"
+        },
+        {
+          "number": 11,
+          "symbol": "9"
+        },
+        {
+          "number": 12,
+          "symbol": "a"
+        }
+      ]
+    }
+  ],
+  "free_pins": [
+    {
+      "pin": "U5.9",
+      "symbol": "0"
+    },
+    {
+      "pin": "U5.8",
+      "symbol": "1"
+    },
+    {
+      "pin": "U1.7",
+      "symbol": "3"
+    },
+    {
+      "pin": "U5.1",
+      "symbol": "e"
+    }
+  ],
+  "connector": {
+    "ref": "J1",
+    "pins": [
+      {
+        "number": 1,
+        "net": "FREE_U5_9",
+        "to": "U5.9"
+      },
+      {
+        "number": 2,
+        "net": "FREE_U5_8",
+        "to": "U5.8"
+      },
+      {
+        "number": 3,
+        "net": "FREE_U1_7",
+        "to": "U1.7"
+      },
+      {
+        "number": 4,
+        "net": "FREE_U5_1",
+        "to": "U5.1"
+      }
+    ]
+  },
+  "nets": [
+    {
+      "name": "N_2",
+      "symbol": "2",
+      "pins": [
+        "U1.1",
+        "U4.2",
+        "U4.4",
+        "U5.6"
+      ]
+    },
+    {
+      "name": "N_4",
+      "symbol": "4",
+      "pins": [
+        "U1.2",
+        "U4.3",
+        "U5.2"
+      ]
+    },
+    {
+      "name": "N_5",
+      "symbol": "5",
+      "pins": [
+        "U1.6",
+        "U2.4",
+        "U3.1"
+      ]
+    },
+    {
+      "name": "N_6",
+      "symbol": "6",
+      "pins": [
+        "U1.5",
+        "U5.4"
+      ]
+    },
+    {
+      "name": "N_7",
+      "symbol": "7",
+      "pins": [
+        "U2.3",
+        "U5.3",
+        "U5.10"
+      ]
+    },
+    {
+      "name": "N_8",
+      "symbol": "8",
+      "pins": [
+        "U2.2",
+        "U3.3"
+      ]
+    },
+    {
+      "name": "N_9",
+      "symbol": "9",
+      "pins": [
+        "U1.4",
+        "U4.1",
+        "U5.11"
+      ]
+    },
+    {
+      "name": "N_a",
+      "symbol": "a",
+      "pins": [
+        "U2.1",
+        "U5.12"
+      ]
+    },
+    {
+      "name": "N_d",
+      "symbol": "d",
+      "pins": [
+        "U3.2",
+        "U5.5"
+      ]
+    },
+    {
+      "name": "N_f",
+      "symbol": "f",
+      "pins": [
+        "U1.3",
+        "U1.8",
+        "U3.4",
+        "U5.7"
+      ]
+    },
+    {
+      "name": "FREE_U5_9",
+      "symbol": null,
+      "pins": [
+        "U5.9",
+        "J1.1"
+      ]
+    },
+    {
+      "name": "FREE_U5_8",
+      "symbol": null,
+      "pins": [
+        "U5.8",
+        "J1.2"
+      ]
+    },
+    {
+      "name": "FREE_U1_7",
+      "symbol": null,
+      "pins": [
+        "U1.7",
+        "J1.3"
+      ]
+    },
+    {
+      "name": "FREE_U5_1",
+      "symbol": null,
+      "pins": [
+        "U5.1",
+        "J1.4"
+      ]
+    }
+  ]
+}
