@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [develop, master]
+  pull_request:
+    branches: [develop, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pcb-checks:
+    name: ERC, DRC and Gerber (KiCad 10.0.8)
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0.8
+      options: --user root
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: ERC, DRC, Gerber and agent checks
+        shell: bash
+        run: bash ./ci.sh
+
+      - name: Upload manufacturing files
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: lab2-fab
+          path: output/
+          if-no-files-found: error
+          retention-days: 30
