@@ -58,14 +58,26 @@ def header_points(n: int):
     return [((x0 + 3.81, y0 - (top - i * SCH_GRID)), (1, 0), 'R') for i in range(n)]
 
 
+def label_corner(ref, n_pins):
+    """Reference/Value positions in the free corners of the symbol (pins sit mid-side)."""
+    x, y = LAYOUT[ref]
+    if ref == 'J1':
+        top = (n_pins - 1) * SCH_GRID / 2 + SCH_GRID
+        return (x, y - top - SCH_GRID), (x, y + top + SCH_GRID)
+    half = n_pins // 4 * SYM_PITCH / 2 + SYM_PITCH / 2
+    d = half + SCH_GRID
+    return (x + d, y - d), (x + d, y + d)
+
+
 def instance(ref, lib_id, value, footprint, n_pins, root_uuid):
     x, y = LAYOUT[ref]
+    (rx, ry), (vx, vy) = label_corner(ref, n_pins)
     pins = '\n'.join(f'    (pin "{i}" (uuid "{uid("pin", ref, i)}"))' for i in range(1, n_pins + 1))
     return f'''  (symbol (lib_id "{lib_id}") (at {fmt(x)} {fmt(y)} 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid "{uid("symbol", ref)}")
-    (property "Reference" "{ref}" (at {fmt(x)} {fmt(y - n_pins / 8 * SYM_PITCH - 12.7)} 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "{value}" (at {fmt(x)} {fmt(y + n_pins / 8 * SYM_PITCH + 12.7)} 0) (effects (font (size 1.27 1.27))))
+    (property "Reference" "{ref}" (at {fmt(rx)} {fmt(ry)} 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left)))
+    (property "Value" "{value}" (at {fmt(vx)} {fmt(vy)} 0) (effects (font (size 1.27 1.27)) (justify left)))
     (property "Footprint" "{footprint}" (at {fmt(x)} {fmt(y)} 0) (effects (font (size 1.27 1.27)) (hide yes)))
     (property "Datasheet" "" (at {fmt(x)} {fmt(y)} 0) (effects (font (size 1.27 1.27)) (hide yes)))
     (property "Description" "" (at {fmt(x)} {fmt(y)} 0) (effects (font (size 1.27 1.27)) (hide yes)))

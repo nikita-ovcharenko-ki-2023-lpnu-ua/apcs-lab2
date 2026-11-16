@@ -1851,23 +1851,26 @@
 		(dnp no)
 		(uuid "2f4214c2-9bb5-5233-9a97-814fa5d55d68")
 		(property "Reference" "U3"
-			(at 215.9 48.26 0)
+			(at 223.52 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
+					(bold yes)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "U3"
-			(at 215.9 78.74 0)
+			(at 223.52 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "lab2:U3_4x4mm"
@@ -1936,23 +1939,26 @@
 		(dnp no)
 		(uuid "2f84cae7-e460-5cfd-93a8-6542af074f81")
 		(property "Reference" "U4"
-			(at 88.9 124.46 0)
+			(at 96.52 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
+					(bold yes)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "U4"
-			(at 88.9 154.94 0)
+			(at 96.52 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "lab2:U4_4x4mm"
@@ -2021,23 +2027,26 @@
 		(dnp no)
 		(uuid "5c729315-cbd0-502a-87bb-363a7d7685bb")
 		(property "Reference" "U5"
-			(at 177.8 119.38 0)
+			(at 190.5 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
+					(bold yes)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "U5"
-			(at 177.8 160.02 0)
+			(at 190.5 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "lab2:U5_12x12mm"
@@ -2130,23 +2139,26 @@
 		(dnp no)
 		(uuid "73cde32f-19a7-5554-b86b-48deb3e22214")
 		(property "Reference" "J1"
-			(at 25.4 86.36 0)
+			(at 25.4 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
+					(bold yes)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "J1"
-			(at 25.4 116.84 0)
+			(at 25.4 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "lab2:J1_1x04_P2.54mm"
@@ -2215,23 +2227,26 @@
 		(dnp no)
 		(uuid "dc992779-b054-5f4e-96e0-f83d181cba13")
 		(property "Reference" "U2"
-			(at 152.4 48.26 0)
+			(at 160.02 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
+					(bold yes)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "U2"
-			(at 152.4 78.74 0)
+			(at 160.02 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "lab2:U2_4x4mm"
@@ -2300,23 +2315,26 @@
 		(dnp no)
 		(uuid "ee8448a4-9227-5e69-8257-ff49276af6b1")
 		(property "Reference" "U1"
-			(at 88.9 45.72 0)
+			(at 99.06 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
+					(bold yes)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "U1"
-			(at 88.9 81.28 0)
+			(at 99.06 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "lab2:U1_8x8mm"
