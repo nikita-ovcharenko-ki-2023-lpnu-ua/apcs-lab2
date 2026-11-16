@@ -15,6 +15,7 @@ GUID з повного імені → п'ять квадратних компо�
 | Перевірка | [`.github/agent-tools/check.py`](.github/agent-tools/check.py) |
 | Архітектура | [`docs/architecture.md`](docs/architecture.md) |
 | Інструкція запуску | [`docs/usage.md`](docs/usage.md) |
+| Докази перевірки | [`docs/verification.md`](docs/verification.md) |
 
 ## Гілки
 - `develop` — лише агент з інструкціями;
