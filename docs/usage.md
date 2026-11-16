@@ -38,3 +38,18 @@ python3 .github/agent-tools/check.py                 # усі групи, exit c
 python3 .github/agent-tools/check.py --only pcb,routing
 ```
 У гілці `develop` (до `/build-board`) групи `params` … `fab` очікувано `FAIL`.
+
+<!-- agent:build:start -->
+## Відтворення плати без агента
+```bash
+python3 tools/params.py "Прізвище Ім'я По батькові"   # params/board.json
+python3 tools/library.py                               # hardware/lib/
+python3 tools/schematic.py                             # hardware/lab2.kicad_sch
+python3 tools/pcb.py                                   # hardware/lab2.kicad_pcb (розміщення)
+python3 tools/route.py                                 # трасування (Freerouting)
+python3 tools/fab.py                                   # ERC/DRC, output/gerbers, output/images
+./ci.sh                                                # те саме, що виконує GitHub Actions
+```
+Відкрити в KiCad: `kicad hardware/lab2.kicad_pro`. Для переробки розміщення —
+видалити доріжки на платі (`/create-pcb` і `/route` не чіпають розведену плату).
+<!-- agent:build:end -->
